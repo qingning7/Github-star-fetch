@@ -36,7 +36,8 @@ flowchart TD
     L --> M{repos 为空?}
     M -- 是 --> N[返回 total_stars]
     M -- 否 --> O[遍历 repos 累加 stargazers_count]
-    O --> P[page += 1; sleep(0.1)]
+    O --> P["page += 1, sleep 0.1s"]
     P --> C
 ```
+
 
